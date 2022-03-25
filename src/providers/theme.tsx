@@ -6,22 +6,9 @@ type AppThemeProviderProps = {
 };
 
 const theme = createTheme({
-  typography: {
-    fontSize: 12,
-  },
   palette: {
     primary: {
       main: "#009688",
-    },
-  },
-  transitions: {
-    create: () => "none",
-  },
-  components: {
-    MuiButtonBase: {
-      defaultProps: {
-        disableRipple: true,
-      },
     },
   },
 });
