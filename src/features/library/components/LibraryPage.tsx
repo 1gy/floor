@@ -1,6 +1,7 @@
 import { AppBar, Box, Divider, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from "@mui/material";
 import { VFC } from "react";
 import { contests } from "../../../assets/data";
+import { LoadingSuspense } from "../../../components/elements/LoadingSuspense";
 import { Page } from "../../../components/elements/Page";
 import { useSet } from "../../../hooks/set";
 import { SoundList } from "./SoundList";
@@ -60,14 +61,17 @@ export const LibraryPage: VFC = () => {
         <Box flexGrow="1" display="flex" overflow="hidden">
           {/*contents*/}
           <Box
-            width={`${theme.breakpoints.values.sm}px`}
+            //width={`${theme.breakpoints.values.sm}px`}
+            width="100%"
             display="flex"
             flexDirection="column"
             overflow="hidden"
             height="100%"
           >
             <Box sx={{ flexGrow: 1, overflow: "hidden" }}>
-              <SoundList />
+              <LoadingSuspense>
+                <SoundList />
+              </LoadingSuspense>
             </Box>
             <Box>
               <SoundPlayer />

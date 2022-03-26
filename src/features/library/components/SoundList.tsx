@@ -1,8 +1,11 @@
-import { Box, List, ListItemButton, ListItemText, Typography } from "@mui/material";
+import { Box, List, ListItemButton, ListItemText } from "@mui/material";
 import { useCallback, useMemo, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
-import { contests, SoundInfo } from "../../../assets/data";
+import type { SoundInfo } from "../../../assets/data";
+import { Loadable } from "../../../libs/loadable";
 import { usePlayingSound } from "../stores";
+
+const dataModule = new Loadable(import("../../../assets/data"));
 
 type FlattenSound = SoundInfo & {
   contest: string;
@@ -10,14 +13,12 @@ type FlattenSound = SoundInfo & {
 
 const useFlattenSounds = (): FlattenSound[] => {
   return useMemo(() => {
-    return Object.entries(contests)
+    return Object.entries(dataModule.getValue().contests)
       .map(([key, contest]) => {
-        return contest.sounds
-          .filter((sound) => !sound.removed)
-          .map<FlattenSound>((sound) => ({ ...sound, contest: key }));
+        return contest.sounds.map<FlattenSound>((sound) => ({ ...sound, contest: key }));
       })
       .flat();
-  }, [contests]);
+  }, [dataModule]);
 };
 
 export const SoundList: VFC = () => {
