@@ -1,4 +1,4 @@
-import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { AppBar, Box, Divider, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from "@mui/material";
 import { VFC } from "react";
 import { contests } from "../../../assets/data";
 import { Page } from "../../../components/elements/Page";
@@ -32,18 +32,55 @@ export const ContestSelector: VFC = () => {
 };
 
 const SoundPlayer: VFC = () => {
-  return <Box>player</Box>;
+  return <Box height="50px">player</Box>;
+};
+
+const TitleBar: VFC = () => {
+  return (
+    <AppBar position="relative">
+      <Toolbar disableGutters sx={{ ml: 2 }} variant="dense">
+        <Typography variant="h6" color="inherit">
+          FLOOR Library
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
+};
+
+const Filter: VFC = () => {
+  return <Box>filter</Box>;
 };
 
 export const LibraryPage: VFC = () => {
+  const theme = useTheme();
+  console.log(theme.breakpoints.values);
+
   return (
     <Page>
-      <Box sx={{ display: "flex", flexDirection: "column", width: "100%", height: "100%" }}>
-        <Box sx={{ flexGrow: 1, overflow: "hidden" }}>
-          <SoundList />
+      <Box display="flex" flexDirection="column" width="100%" height="100%">
+        <Box>
+          <TitleBar />
         </Box>
-        <Box sx={{ bgcolor: "#ddd" }}>
-          <SoundPlayer />
+        <Box flexGrow="1" display="flex" overflow="hidden">
+          {/*contents*/}
+          <Box
+            width={`${theme.breakpoints.values.sm}px`}
+            display="flex"
+            flexDirection="column"
+            overflow="hidden"
+            height="100%"
+          >
+            <Box sx={{ flexGrow: 1, overflow: "hidden" }}>
+              <SoundList />
+            </Box>
+            <Box>
+              <SoundPlayer />
+            </Box>
+          </Box>
+          {/*filter*/}
+          <Box flexGrow={1} bgcolor="grey.100" display={{ xs: "none", sm: "none" }}>
+            <Filter />
+          </Box>
         </Box>
       </Box>
     </Page>

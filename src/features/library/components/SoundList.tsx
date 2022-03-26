@@ -1,4 +1,4 @@
-import { Box, List, ListItemButton, ListItemText } from "@mui/material";
+import { Box, List, ListItemButton, ListItemText, Typography } from "@mui/material";
 import { useCallback, useMemo, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
 import { contests, SoundInfo } from "../../../assets/data";
@@ -41,7 +41,14 @@ export const SoundList: VFC = () => {
               transform: `translateY(${row.start}px)`,
             }}
           >
-            <ListItemText secondary={sounds[row.index].artist}>{sounds[row.index].title}</ListItemText>
+            <ListItemText
+              secondary={sounds[row.index].artist}
+              sx={{ textOverflow: "ellipsis" }}
+              primaryTypographyProps={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}
+              secondaryTypographyProps={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}
+            >
+              {sounds[row.index].title}
+            </ListItemText>
           </ListItemButton>
         ))}
       </Box>
