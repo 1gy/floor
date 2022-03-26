@@ -8,7 +8,7 @@ type AppThemeProviderProps = {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#009688",
+      main: "#1792E2",
     },
   },
 });
