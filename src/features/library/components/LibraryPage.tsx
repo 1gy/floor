@@ -4,6 +4,7 @@ import { contests } from "../../../assets/data";
 import { Page } from "../../../components/elements/Page";
 import { useSet } from "../../../hooks/set";
 import { SoundList } from "./SoundList";
+import { SoundPlayer } from "./SoundPlayer";
 
 type ContestBannerProps = {
   value: string;
@@ -31,10 +32,6 @@ export const ContestSelector: VFC = () => {
   );
 };
 
-const SoundPlayer: VFC = () => {
-  return <Box height="50px">player</Box>;
-};
-
 const TitleBar: VFC = () => {
   return (
     <AppBar position="relative">
@@ -53,7 +50,6 @@ const Filter: VFC = () => {
 
 export const LibraryPage: VFC = () => {
   const theme = useTheme();
-  console.log(theme.breakpoints.values);
 
   return (
     <Page>

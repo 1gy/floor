@@ -2,6 +2,7 @@ import { Box, List, ListItemButton, ListItemText, Typography } from "@mui/materi
 import { useCallback, useMemo, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
 import { contests, SoundInfo } from "../../../assets/data";
+import { usePlayingSound } from "../stores";
 
 type FlattenSound = SoundInfo & {
   contest: string;
@@ -25,6 +26,7 @@ export const SoundList: VFC = () => {
     parentRef: containerRef,
     estimateSize: useCallback(() => 70, []),
   });
+  const [sound, setSound] = usePlayingSound();
 
   return (
     <List ref={containerRef} sx={{ width: "100%", height: "100%", overflow: "auto" }}>
@@ -40,6 +42,8 @@ export const SoundList: VFC = () => {
               height: `${row.size}px`,
               transform: `translateY(${row.start}px)`,
             }}
+            onClick={() => setSound(sounds[row.index])}
+            selected={sounds[row.index].source === sound?.source}
           >
             <ListItemText
               secondary={sounds[row.index].artist}
