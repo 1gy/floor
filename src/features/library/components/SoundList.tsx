@@ -12,7 +12,9 @@ const useFlattenSounds = (): FlattenSound[] => {
   return useMemo(() => {
     return Object.entries(contests)
       .map(([key, contest]) => {
-        return contest.sounds.map<FlattenSound>((sound) => ({ ...sound, contest: key }));
+        return contest.sounds
+          .filter((sound) => !sound.removed)
+          .map<FlattenSound>((sound) => ({ ...sound, contest: key }));
       })
       .flat();
   }, [contests]);
