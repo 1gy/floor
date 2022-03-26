@@ -29,7 +29,7 @@ const location = new ReactLocation();
 
 export const AppRoutes: VFC = () => {
   return (
-    <Router location={location} routes={routes}>
+    <Router basepath="/floor/" location={location} routes={routes}>
       <Outlet />
     </Router>
   );
