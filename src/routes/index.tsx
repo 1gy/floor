@@ -1,17 +1,10 @@
-import {
-  Navigate,
-  Outlet,
-  ReactLocation,
-  Route,
-  Router,
-} from "@tanstack/react-location";
+import { Navigate, Outlet, ReactLocation, Route, Router } from "@tanstack/react-location";
 import { VFC } from "react";
 import { lazyImport } from "../libs/lazyImport";
 
-const { MainRoutes } = lazyImport(
-  () => import("../features/main"),
-  "MainRoutes"
-);
+const { MainRoutes } = lazyImport(() => import("../features/main"), "MainRoutes");
+
+const { LibraryRoutes } = lazyImport(() => import("../features/library"), "LibraryRoutes");
 
 const routes: Route[] = [
   {
@@ -20,7 +13,7 @@ const routes: Route[] = [
   },
   {
     path: "/library",
-    element: <div>library</div>,
+    element: <LibraryRoutes />,
   },
   {
     path: "/quiz",

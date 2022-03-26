@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Card, CardActionArea, CardContent, Grid, Typography } from "@mui/material";
 import { useNavigate } from "@tanstack/react-location";
 import { useCallback, VFC } from "react";
 import { Page } from "../../../components/elements/Page";

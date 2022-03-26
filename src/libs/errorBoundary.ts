@@ -1,10 +1,5 @@
 import { createElement } from "react";
-import {
-  Component,
-  ComponentType,
-  PropsWithChildren,
-  PropsWithRef,
-} from "react";
+import { Component, ComponentType, PropsWithChildren, PropsWithRef } from "react";
 
 export type FallbackProps = {
   error: Error;
@@ -20,10 +15,7 @@ type ErrorBoundaryState = {
 
 const initialState: ErrorBoundaryState = { error: null };
 
-export class ErrorBoundary extends Component<
-  PropsWithRef<PropsWithChildren<ErrorBoundaryProps>>,
-  ErrorBoundaryState
-> {
+export class ErrorBoundary extends Component<PropsWithRef<PropsWithChildren<ErrorBoundaryProps>>, ErrorBoundaryState> {
   static getDerivedStateFromError(error: Error) {
     return { error };
   }
