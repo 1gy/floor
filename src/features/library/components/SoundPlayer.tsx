@@ -1,11 +1,11 @@
-import { Box, IconButton, ListItemText, Slider, Stack, Toolbar } from "@mui/material";
+import { Box, IconButton, ListItem, ListItemText, Slider, Stack, Toolbar } from "@mui/material";
 import { useCallback, useState, VFC } from "react";
-import { PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
+import { CloseIcon, PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
 import { usePlayingSound } from "../stores";
 import { useAudio } from "./SoundPlayer.logic";
 
 export const SoundPlayer: VFC = () => {
-  const [sound] = usePlayingSound();
+  const [sound, setSound] = usePlayingSound();
   const [volume, setVolume] = useState(0.5);
   const { playing, play, pause } = useAudio(sound?.source, volume);
 
@@ -15,15 +15,27 @@ export const SoundPlayer: VFC = () => {
     }
   }, []);
 
+  const handleClose = useCallback(() => {
+    setSound(null);
+  }, []);
+
   if (!sound) {
     return <></>;
   }
 
   return (
-    <Box bgcolor="grey.100">
-      <ListItemText sx={{ pt: 1, pl: 2 }} secondary={sound.artist}>
-        {sound.title}
-      </ListItemText>
+    <Box bgcolor="grey.100" sx={{ pr: 1 }}>
+      <ListItem
+        sx={{ pt: 1, pl: 2 }}
+        disableGutters
+        secondaryAction={
+          <IconButton onClick={handleClose}>
+            <CloseIcon />
+          </IconButton>
+        }
+      >
+        <ListItemText secondary={sound.artist}>{sound.title}</ListItemText>
+      </ListItem>
       <Toolbar disableGutters sx={{ ml: 1, mr: 1 }} variant="dense">
         <IconButton onClick={() => (playing ? pause() : play())}>
           {playing ? <PauseIcon /> : <PlayArrowIcon />}
