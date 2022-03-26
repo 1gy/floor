@@ -5,25 +5,30 @@ const useUpdate = () => {
   return useCallback(() => update((prev) => !prev), []);
 };
 
-export const useAudio = (url: string | undefined) => {
+export const useAudio = (url: string | undefined, volume: number) => {
   const audio = useMemo(() => {
     return new Audio(url);
   }, [url]);
   const update = useUpdate();
 
   useEffect(() => {
-    audio.volume = 0.1;
+    audio.volume = volume;
     audio.addEventListener("play", update);
     audio.addEventListener("pause", update);
-    audio.addEventListener("timeupdate", update);
+    audio.play().catch((e) => {
+      // see: Autoplay policy
+    });
 
     return () => {
       audio.pause();
       audio.removeEventListener("play", update);
       audio.removeEventListener("pause", update);
-      audio.removeEventListener("timeupdate", update);
     };
   }, [audio]);
+
+  useEffect(() => {
+    audio.volume = volume;
+  }, [audio, volume]);
 
   const play = useCallback(() => {
     audio.play();
@@ -35,7 +40,6 @@ export const useAudio = (url: string | undefined) => {
 
   return {
     playing: !audio.paused,
-    currentTime: audio.currentTime,
     play,
     pause,
   };
