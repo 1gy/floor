@@ -868,7 +868,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "LV.4(第１回目配信楽曲）",
-        title: "青春☆してるかい？READY&amp;LADY!",
+        title: "青春☆してるかい？READY&LADY!",
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/original/08/03.mp3",
         comment:
           "今日和!!SDVXプレイヤーの皆様ハジメマシテ!!\nCODE-49のLV.4です!\n今回の楽曲は、ヴォーカルに萌えボイスの持ち主、みゆを迎え\n好きな男の子と初めてデートに行くけど、なかなか思い通りに行かない、\n女の子のドキドキ恋心を歌った\nパワフルでハイテンションなポップチューンです!\n作詞する時は、女の子の気持ちを妄想して書きましたが、いかがでしょうか？\n結局、この女の子はこの後どうなるんでしょうね・・・？\nそれでは、鈍感な男の子をぶん殴るように、ボタンを叩いて、ツマミを回しまくって楽しんでください！",
@@ -1130,7 +1130,7 @@ export const contests: Record<string, Contest> = {
           "( ´>_ゝ<`)<はわわｗ！僕はワッヘイ君デスｗ\nはじめまして、Archです！知っている人は知っている「SDVXの公募落ちたら女装して逆立ち」の人です！！\n普段はLilium RecordsやWahhei Recordsで活動しています。\n自分が曲作りを始めたきっかけに音ゲーがあるので、ゲーセンの筐体で自分の曲を聴けると思うと胸熱！！\n採用通知見た時は嬉しすぎて椅子から転げ落ちました！\n曲のほうはUK HARDCOREを強く意識したものになってます！ぜひぜひプレイしてください！！\nv('ω')",
       },
       {
-        artist: "DOUBLE HELIX【たちのん&amp;零-zero-】(第1回目配信楽曲）",
+        artist: "DOUBLE HELIX【たちのん&零-zero-】(第1回目配信楽曲）",
         title: "Venona",
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/remix/04/04.mp3",
         comment:
@@ -1223,7 +1223,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "かめりあ feat. ななひら(第5回目配信楽曲）",
-        title: 'コンベア速度Max!? しゃいにん☆廻転ズシ"Sushi&amp;Peace"',
+        title: 'コンベア速度Max!? しゃいにん☆廻転ズシ"Sushi&Peace"',
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/original/10/5_01.mp3",
         comment:
           "本自由研究では“日本食における「回転寿司」と電波楽曲のハイブリッド化”について研究を行った。加えて「寿司によって世界平和をもたらす」という未知の理論に関する発見を含む。\nまた、共著（ボーカル）にななひら名誉寿司教授を迎え執筆した事をここに記す。（かめりあ）\nA piece of sushi is peace―――\n寿司の一部は平和です。\nそして大多数の寿司は一部の富豪寿司の平和のため働かされる。不平不満も溜まるが、毎日の労働で反乱する気力ｍサーモン美味しい\nそんなイメージで歌いました。どうぞよろしくお願いします！（ななひら）",
@@ -1583,7 +1583,7 @@ export const contests: Record<string, Contest> = {
           "こんにちは。普段はボカロPとして活動している上村香月です。\nDTM MAGAZINEコラボレーションコンテスト二回目、再び採用させていただきました！\n前回は「七色のウタ」というアニソン風な楽曲でしたが今回は約2分間の中に様々な要素を詰め込みました。\nゴリゴリなギター、シンセ、ファミコンサウンドにストリングス。\nちょっとやりすぎた感はありますが音ゲーならこれくらいがちょうど良いと信じています！！\n是非是非プレイよろしくお願いしますーーーーー！！！！",
       },
       {
-        artist: "Music by nmk/佐原誠&amp;kei_iwata, Vocal by SOPHY(第2回目配信楽曲）",
+        artist: "Music by nmk/佐原誠&kei_iwata, Vocal by SOPHY(第2回目配信楽曲）",
         title: "冬に桜が咲くようなキセキ。",
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/original/12/2_02.mp3",
         comment:
@@ -2263,7 +2263,7 @@ export const contests: Record<string, Contest> = {
           "ども、アサヒナです。III稼働おめでとうございます。曲名は「れ」と呼んであげてください。れ。\n気づく方は気づいてくれていると信じていますが、某コケティッシュでおフレンチなあの方々のオマージュです。\n新曲をいつまでも待っていたのですがなかなか出ないので、じゃあ自分で作ろう！そして、モテよう！と思いました。\nコナミオリジナル楽曲として自分が今まで受け取ってきた中で自分がやれることでもあるな、と。\n（しかし、作っておきながら受かるとあんまり思っていなかったのでまたもやSDVXの裾野の広さをわからされた形に。。）\n奇しくもこの曲のテーマが何故人は争うの？的なことだったり、曲の後半の展開なんかがその輪廻を表していたりでGRAVITY WARSといった新しいテーマに偶然合った気がしてよかったなぁと思います。\nいや戦争にいきなり疑問投げかけてるけど、いいんだろうか。平和いちばん。\nそんなわけで SDVX III のヒロイン枠として愛でて頂ければ幸いです。\n歌はkonomi*ちゃんに頼ませてもらいましたが歌ってもらえてよかった～！\nフランス語、いいなぁ～。\nP.S. まだまだ復活待ってますよ！！\n（おとと歌詞のおにいさん Yu_Asahina）\nゲーム音楽やフランス語の歌詞は初めてでしたが楽しく歌わせていただきました。\n疾走感がありますがピアノがすてきなクールな楽曲になっています。\n楽しんでいただけたらと思います。\n（うたのおねえさん konomi*）\nPourquoi les hommes se battent-ils ?\nÀ petit feu se détruisent, d'eux mêm0 es se brûlent les ailes.\n[Sans fondements] Mon coeur en ceRndres se fond, impatient.\nMon Dieu, qu'avez vous fais ?\nPourquoi, les fourmis vénéneuses, prônant la justice,\nMoi, je vaincrais, dans la lumière mon bouclier.\n-ne peuvent s'arreter, sans être écrasées.-\nOù sont donc allés les murmures du passé,\nnos amours, nos passions, toutes oubliées.\nMême dans ce monde cruel, brille une lueur\nje me retrouverai, me rappelerai, et je reviendrais\nQuand ais-je perdu la tête ?\nLa La La...\nQuand ais-je perdu la tête ?",
       },
       {
-        artist: "borzy &amp; 結月そら(第13回目配信楽曲）",
+        artist: "borzy & 結月そら(第13回目配信楽曲）",
         title: "零れる夢のレミニセンス",
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/original/15/13_01.mp3",
         comment:
@@ -2389,7 +2389,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "Salk2d(第6回目配信楽曲）",
-        title: "One &amp; Only",
+        title: "One & Only",
         source: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/sounds/original/15/6_02.mp3",
         comment:
           "＜Salk2d＞\nこの度は「One & Only」を採用頂きありがとうございます！\n2回目の採用という事で本当に嬉しく思います。\n前作同様、命削った甲斐がありました。\n皆様に楽しんで頂ければ本望です。\n＜もとみ＞\n作詞したもとみです。\nブイブイいっててリズミカルな音楽の邪魔をしないような、\nそんな歌詞になってればいいなあと思ってます。",
@@ -3097,7 +3097,7 @@ export const contests: Record<string, Contest> = {
           "僕が通っていた学校の近くに、一軒のゲームセンターがありました。\nそれはとても小さな、パチンコ台と麻雀台しか置いていないようなタバコ臭いゲームセンター。\nタバコの臭いを嗅ぐと頭が痛くなる僕はそのゲームセンターを避けていました。\nある日、そのゲームセンターに見慣れないゲーム筐体が設置されていました。\n青く光る姿。疾走感200%の文字。\nこれが僕とSOUND VOLTEX、そしてBEMANIとの出会いです。\n僕の人生は180度変わりました。ここまで放課後を楽しみにしたことは今までなかった。友達とスコアを競い合いました。友達にSDVXを紹介して「面白い！」と言ってくれた時、喜びを感じました。新たな交友関係も生まれました。みんなで大宇宙ステージの鍵盤をどういった運指で叩くか、また出来もしないのにMax Burning!!に挑み、ボロボロにされて大爆笑したりしていました。\n僕の学校生活は、SDVXに彩られていきました。\n「もし、もしもこの筐体から自分が作曲した楽曲が流れていたら、どんなに嬉しく、楽しいことだろう」\nそう考えるようになるまで、さほど時間はかかりませんでした。\n音楽について多少の知識はありましたが、勢いのまま作った最初の楽曲は聴くに耐えないものでした。それでも僕は、自分の作った楽曲を他の人に聴いてもらえるということにこの上ない喜びを覚えました。\n当然、それなりに続けていくと良いことばかりなわけありません。自分より後から作曲を始めた人が自分の何倍も評価されて嫉妬したこともあります。最高の自信を持って送り出した楽曲が「イマイチ」と言われ、本気で落ち込んだことなんて数え切れません。その度に激しく落ち込みました。FLOORの採用は、僕にとってあまりに遠いもののように思えました。\nそんなとき、「The 5th KAC オリジナル楽曲コンテスト」は始まりました。最初はどうせ受からないと、躊躇しました。でも、あそこまで夢に見た舞台への入り口が目の前にあった。ここで燻っていて何が「採用が目標」？ふざけるな。\n僕は音楽仲間であり尊敬するクリエイターの一人、雄之助さんに声をかけました。快く了承してくれて、嬉しかった。二人で採用を目指そう、その意思のもと「KLing」は結成されました。\nどうせ初チャレンジなら、自分がSDVX、BEMANIから受けた影響を全部エッセンスとして詰め込んでやろうと思いました。それゆえ雄之助さんには無茶なパスを送ったりしましたが、雄之助さんが見事に繋いでくれて合作は比較的スムーズに、楽しみながら進行していきました。そうして出来上がったのが『Quaint Echo』です。僕らはこの曲に、当時出せる全てを出し切りました。\nメールボックスに「仮採用」の文字が見えた時、想像では叫んだり泣いたりするのかなぁと思っていたのですが、実際は何も言葉が出てきませんでした。人間は予想外のことが起こると思考が停止すると言いますがまさにそんな感じで、あとからジワジワと嬉しさが込み上げて来ました。\n「僕の人生を彩ってくれたSDVXを、少しだけでも僕たちの手で彩ることができる」\n夢が、現実になっていました。\n長々と申し訳ありません。\nこの曲は、SDVXに収録されて初めて完成します。何よりも、自分たちが楽しむために作った曲だから。\nその曲を全国の、いや、全世界のユーザーの皆様と共に遊び、楽しめる。これ以上の喜びなんてありません。\n『Quaint Echo』、どうか宜しくお願いします。\n本当に、ありがとうございます。\n(Aoi)\n初めまして、雄之助と申します。\n尊敬する方々も多くいらっしゃるボルテの、それもKACのコンテストに採用いただけるなんて夢にも思いませんでした。本当にありがとうございます！\n正直いまだに実感が湧きません。\n今回、チャレンジしたこの『Quaint Echo』は、雄之助として作ったことのないハイテンポな楽曲で、かなり試行錯誤しながら制作しました。\n自分1人では思いつかないような展開やメロディーなどを組み込んで一曲に仕上げていくのはとても新鮮で、楽しく作り進めることが出来ました。特に前半部分のドロップや、オペラなどの壮大な雰囲気を意識して作ったパートに力を入れてます！\nほんとに自信作なので是非是非楽しんでプレイして下さい！\nAoiさん、コメントが長い。\n(雄之助)",
       },
       {
-        artist: "uno &amp; D.watt (IOSYS TRAX)(第8回目配信楽曲）",
+        artist: "uno & D.watt (IOSYS TRAX)(第8回目配信楽曲）",
         title: "#Endroll",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/19/result/sound/8_04.mp3",
         comment:
@@ -3201,7 +3201,7 @@ export const contests: Record<string, Contest> = {
           "この度はご採用頂きまして誠に有難うございます！\n大好きな音楽ジャンルのHi-Tech Full Onをテーマにした電波ソングを作らせて頂きました\nハイテック・・・ハイテック・・・ハイテッ娘！！！？と脳内に稲妻が落ちまして完成しました\nお馴染みのmikoさん nachiさん 大瀬良あいさんが歌っています！\n頭おかしい曲で申し訳ありませんが皆様のプレイをお待ちしております！！\n安心おｋ！まかせておｋ！\n(M.H.S（溝口ホール工房）溝口ゆうま)\n採用ありがとうございます！\nなんだか元気になりたいなーってときは是非この曲をセレクト♪\n明日から元気さ！\n(miko（ハイテッコ三女担当）)\n採用ありがとうございます！\n楽しい曲になりました！\nブチアゲドクターの診察ぜひ受けてみて下さい♪\n(nachi（ハイテッコ長女担当）)\n次女担当の大瀬良あいです♪ネジが緩んでる感じで歌わせて頂きました！\n面白い曲と歌詞なので、是非プレイしてみて下さいませ♪\n(大瀬良あい（ハイテッコ次女担当）)",
       },
       {
-        artist: "uma&amp;hurirai feat.ましろ(第4回目配信楽曲）",
+        artist: "uma&hurirai feat.ましろ(第4回目配信楽曲）",
         title: "Apex of the World",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/19/result/sound/4_03.mp3",
         comment:
@@ -3347,7 +3347,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "Shiron vs. Sound Artz(第8回目配信楽曲）",
-        title: "雪月花 (Shiron &amp; Sound Artz Remix)",
+        title: "雪月花 (Shiron & Sound Artz Remix)",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/remix/08/result/sound/8_02.mp3",
         comment:
           "どうも初めまして。Sound Artzのいっくんです。初採用嬉しい限りです！\n今回は初採用ながらあの有名なShiron君と合作させていたただきました。ありがたい限りです。\n和風＆トリッキーなシャッフルメロディーにパンチのあるキック、太いベースでブチ上げるハンズアップリミックスになってます。\n二人が得意とするジャンルで作っただけあって、上手くお互いの良いところが出た仕上がりになってますので、是非楽しんで下さい！\n(Sound Artz)\n---------------------------------------------\nご採用頂きありがとうございます！Shiron vs. Sound ArtzのSの方、Shironです。\n合作という形ではありますが、BEMANI楽曲リミックスコンテストで採用頂いたのは初で、身に余る想いでございます。\n私がBEMANIを触り出したきっかけはjubeatで流れていた「bass 2 bass」で、\nそのメロディのキャッチーさに惹かれ、jubeatをはじめとしたBEMANIシリーズにズブズブになっていきました。\nそれから、Ryu☆さんの音楽にもズブズブになっていきました。\n今まで数多くのサウンドを手がけられているRyu☆さんですが、特にそれを初めて耳にしたとき、凄まじい衝撃を受けた楽曲があります。\nHANDZ UP　-　Second Heaven　-　Ryu☆\nなんだこれ。\n図太いキック、ファットなベース、分厚いリード、三倍アイスクリーム……\nその時耳に入ってきた全ての刺激が衝撃でした。\nそこからハンズアップと呼ばれる音楽にズブズブになっていきました。\nついに今回Ryu☆リミックスコンテストの開催が告知されたとき、即座に何をするかが決まりました。\n同じRyu☆に影響を受けた者同士、今やらずにいつやるべきか！！\nてな感じで、国内ハンズアップシーンの巨匠Sound Artzさんと合作をさせて頂くこととなりました！ありがとうございます。\n今回リミックス致しました楽曲はbeatmaniaIIDX 10th Styleより「雪月花」。ブチアゲるには最適でした。\nIIDX九段のボスだったときは物凄い苦戦を強いられた記憶があります。\n製作の流れとしては、Sound Artzさんに楽曲のラフを元に核となるサウンドを作ってもらい、\n私はリミックスのディレクション、メロディのアレンジ、最終的な細部の調整、仕上げなどを行いました。\nRyu☆さんを初めとした様々なハンズアップアーティストを意識した構成となっております。\nそんなわけで、たくさんのズブズブをこの1曲に込めました。\n是非ズブズブになってプレーしてくださいね！\nP.S. Ryu☆さん、アルバム発売おめでとうございます！\n(Shiron)",
@@ -3693,7 +3693,7 @@ export const contests: Record<string, Contest> = {
           "はじめまして。Omnisと申します。この度は自分の曲が採用され大変嬉しく思っております。ありがとうございます。\n採用されました曲は爽やかで切ない歌詞、サウンドとなっており、それでいて綺麗なメロディ、軽快な曲になっております。\n皆様の心に残る、お気に入りの一曲になることを願いつつ、是非楽しくプレイして頂けたらと思います。\n以上、Omnisでした(=ﾟωﾟ)ﾉ",
       },
       {
-        artist: "udouddo&amp;VALLEYSTONE(第8回目配信楽曲）",
+        artist: "udouddo&VALLEYSTONE(第8回目配信楽曲）",
         title: "Junk Mania",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/20/result/sound/8_02.mp3",
         comment:
@@ -3735,7 +3735,7 @@ export const contests: Record<string, Contest> = {
           'はじめまして。遥か彼方からやってきたエレクトロニック・モンスターユニット"technoplanet"です。\nInscapeとは英国の詩人、ジェラード・マンリ・ホプキンスの造語で「内在する独自の本質」という意味です。\n壮大さと哀愁を引き立たせるストリングス、神々しいコーラス、緻密でスピーディなリズム。\nそれらをバックに自分の一番のアイデンティティであるテクニカルでエモーショナルなピアノをこれでもかと詰め込みました。\n激務の中どうにか時間を捻出して作った力作ですので是非ともお楽しみいただければ幸いです。\n（technoplanet）\nはじめまして。コーラスを担当させていただきましたkayumaiと申します。\nこの度は採用していただきありがとうございます！\n憧れのtechnoplanetさんとコラボさせていただき、大変光栄です。\nしかもこうして採用していただけるなんて夢のようです。\n今回自分の得意とする声楽的なコーラスで参加できて、こんなに嬉しいことはありません。\nとにかく楽曲が素晴らしいので、是非プレイしてみてください！\nどうぞよろしくお願いいたします。\n（kayumai）',
       },
       {
-        artist: "borzy &amp; 結月そら(第6回目配信楽曲）",
+        artist: "borzy & 結月そら(第6回目配信楽曲）",
         title: "湖底遺跡のヴィダー・ハル",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/20/result/sound/6_01.mp3",
         comment:
@@ -3847,7 +3847,7 @@ export const contests: Record<string, Contest> = {
           "初めまして！\nEndorfin.の歌う方、藍月なくると申します。\nこの度はご採用、誠にありがとうございます！\nEndorfin.として今まで何曲か歌わせていただいてきた中で、\n「Four Leaves」は初めてスタジオで作曲のsky_deltaさんと一緒に収録した事もあり、私としても特に思い入れが深い曲です。\n何か始まりを予感させるような…さわやかで爽快感のある音に対して、私も真っ直ぐ、気持ちをぶつける様に歌わせていただきました。\n楽しんでプレイして下さると嬉しいです～！\n(藍月なくる)\nこんにちは、作った方のsky_deltaと申します。\n前々からEndorfin.でSOUND VOLTEXに進出したいしたいと思っていたところこちらのIV制作決定記念コンテストが開催されまして、\nしかも爽やかで青くて疾走感1600%で、ああもうこれはEndorfin.じゃないですかとなりまして意気込んで応募させて頂きました。\n採用誠にありがとうございます。\n自分自身思った以上になんと言いますか真っ直ぐな楽曲になってちょっとびっくりしてます。\n僕個人の感覚だと「ボルテっぽさ」には欠けるかなと思うのですが、良く言えばあまりボルテには無かった方向の楽曲なのではないかと思います。\n新しい風的な何かを吹かせることが出来たら幸いです。よろしくお願いします。\n(sky_delta)",
       },
       {
-        artist: "Braflare(kanone&amp;かぼちゃ)(第1回目配信楽曲）",
+        artist: "Braflare(kanone&かぼちゃ)(第1回目配信楽曲）",
         title: "EDEN of TRUTH",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/20/result/sound/1_07.mp3",
         comment:
@@ -3888,7 +3888,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "polysha+inusack(第5回目配信楽曲）",
-        title: "Destruction &amp; Qreation",
+        title: "Destruction & Qreation",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/21/result/sound/5_05.mp3",
         comment:
           "こんにちは。polyshaといいます。\n今回、学校の友人でもあるinusack君と合作致しました。\ninusack君に作曲・展開の構成などをお願いし、私は全体の調整・編曲などを担当しました。\n破壊と創造をテーマにしたハードかつメロディックなDrum'n bassです。\nKAC向けのコンテストに合格するのは初めてであり、大変嬉しいです。よろしくお願いします。\n（polysha）\nはじめまして、inusackといいます。\n今回、私は作曲を担当させていただきました。\npolysha君から仮採用の連絡が来た日は大好きな焼いたお肉を食べました。\nこの楽曲を制作するにあたって2人でいろいろなことを、ほとんど毎日のように話し合いました。その成果が今、この結果に結びついたのだと私は思います。\n楽曲のテーマに倣って、僕もためしに何かぶっ壊してみようと思います。\nこの度は採用して頂き誠にありがとうございました。\n（inusack）",
@@ -3929,7 +3929,7 @@ export const contests: Record<string, Contest> = {
           "こんにちは、Aoi Sumito a.k.a. あおいひとです。\nSDVXにはここなつプロデュースコンテストに続き二度目の採用を頂きました！\nそして今回、自身の夢であったガバというジャンルの楽曲での採用が叶い、\n嬉しい限りです。ありがとうございます！\n本楽曲のタイトルですが、「ファフニール」と読み\n北欧神話やゲルマン神話に登場するドラゴンになります。\n怒り狂い荒ぶる怪物の姿、そしてKAC決勝出場者やプレイヤーの皆様には\nその怪物に立ち向かい、打ち倒す英雄になってほしい…そんなことを\nイメージして制作しました。\n是非挑戦してみて下さい！",
       },
       {
-        artist: "a_hisa vs KV.S&amp;はらたま(第4回目配信楽曲）",
+        artist: "a_hisa vs KV.S&はらたま(第4回目配信楽曲）",
         title: "獅子奮迅",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/21/result/sound/4_03.mp3",
         comment:
@@ -4109,7 +4109,7 @@ export const contests: Record<string, Contest> = {
           "この度は採用をいただきありがとうございました。\nFLOORは今回が初挑戦でしたが、採用いただきとても光栄です。\n壮大で癒し系な曲が好きなのですが、一方でジャズみたいなおしゃれ感も好きなので、\nそういった趣味全開で編曲 (一部作曲)、mixなどやらせて頂きました。ぴあのひきました。\n3人の世界観がうまくぶつかり合った曲に仕上がっております！\nこの曲は船出、旅路というものをイメージしています。皆様は旅行に行きたい場所はありますでしょうか？\n僕は「アドリア海の真珠」と呼ばれる場所にでも行きたい気分です。\nまぶしいです！空の青さがまぶしいです！\n(Ayato)\nはじめまして、sakと申します！主に作曲を担当しました～\nこの楽曲は“はやくない疾走感”をテーマに作成しました。\n6拍子をベースにしつつ比較的ゆったりとしたリズムを強調することで、音の数と速さで攻める楽曲たちとはまた違う疾走感が演出できているのではと思います。\n今回は光栄なことに楽曲という形でコンテストに参加させてしていただいたきました。\nKACは音ゲーをプレーする身として本当に憧れの場なので、いつかはプレイヤーとしても参加してみたいものです。\nすこしは強くなったでしょう？\n(sak)\nこの度は採用ありがとうございます！\n作詞とボーカルを担当しました、田島千種と申します。\nシンガーソングライターとして活動しているのですが、普段自分1人では作れないような曲を制作する事が出来ただけでも物凄く楽しかったのに、かつ採用して頂けるなんて本当に嬉しいです…！\n実際に配信されてプレイした時、下手過ぎて落ち込むのが目に見えてるので今の内に特訓頑張ります！！！！\n(田島千種)",
       },
       {
-        artist: "Team&amp;Dj Grimoire(第8回目配信楽曲）",
+        artist: "Team&Dj Grimoire(第8回目配信楽曲）",
         title: "Akzeriyyuth",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/22/result/sound/8_04.mp3",
         comment:
@@ -4248,7 +4248,7 @@ export const contests: Record<string, Contest> = {
           "U-skeと申します。この度は採用ありがとうございます！\n嬉しさを噛みしめるとき、ため息が出ちゃいそうなとき。幾度となく空を見上げたりするけど、その広さの全てを知る術なんてない僕らは想いを託したスペースバルーンを打ち上げるのです。\nさあ！大気圏を突き抜けて、どこまでも高くゆくのだ！\n(U-ske)\nはじめまして、棗(なつめ)いつきと申します。採用頂きありがとうございます！\n涙だって吹き飛ぶようなキュートでパワフルな楽曲、元気をぎゅぎゅっと詰め込んで歌わせて頂きました。プレイしてくれた皆さんがたのしい気持ちになれますように！\n(棗いつき)",
       },
       {
-        artist: "はるなば with すずしろ&amp;桃箱(第2回目配信楽曲）",
+        artist: "はるなば with すずしろ&桃箱(第2回目配信楽曲）",
         title: "メルヘン風紀委員会",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/22/result/sound/2_07.mp3",
         comment:
@@ -4450,7 +4450,7 @@ export const contests: Record<string, Contest> = {
           '初めまして、Diartzh(ディアーツ)と申します！\n今回の東方永夜抄リミックス楽曲コンテスト、採用頂き本当に光栄です。やった！\n私も例に漏れずボルテがきっかけで作曲を始めたので、今回の採用はとてつもなく嬉しいです。\nさて「シンデレラケージ ～ Kagome-Kagome」をリミックスするにあたって、どうしたらボルテで楽しくプレー出来そうな曲になるかを考えた所、これしか思いつきませんでした。\n始めから終わりまでノンストップで駆け抜けながら作った楽曲なので、皆さんにも是非駆け抜けて頂けたらと思います！\nSpecial Thanks to "Rouse arc"\n(Diartzh)',
       },
       {
-        artist: "uma &amp; nmk feat. 橘花音(第5回目配信楽曲）",
+        artist: "uma & nmk feat. 橘花音(第5回目配信楽曲）",
         title: "Burning Spark!",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/remix/09/result/sound/5_04.mp3",
         comment:
@@ -4555,7 +4555,7 @@ export const contests: Record<string, Contest> = {
           '初めまして、Diartzh(ディアーツ)と申します！\n今回の東方永夜抄リミックス楽曲コンテスト、採用頂き本当に光栄です。やった！\n私も例に漏れずボルテがきっかけで作曲を始めたので、今回の採用はとてつもなく嬉しいです。\nさて「シンデレラケージ ～ Kagome-Kagome」をリミックスするにあたって、どうしたらボルテで楽しくプレー出来そうな曲になるかを考えた所、これしか思いつきませんでした。\n始めから終わりまでノンストップで駆け抜けながら作った楽曲なので、皆さんにも是非駆け抜けて頂けたらと思います！\nSpecial Thanks to "Rouse arc"\n(Diartzh)',
       },
       {
-        artist: "uma &amp; nmk feat. 橘花音(第5回目配信楽曲）",
+        artist: "uma & nmk feat. 橘花音(第5回目配信楽曲）",
         title: "Burning Spark!",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/remix/09/result/sound/5_04.mp3",
         comment:
@@ -4767,7 +4767,7 @@ export const contests: Record<string, Contest> = {
           '初めまして、あるいはいつもお世話になっております、709sec.です。\n近くで祭りをやってると聞くと行かずにはいられない、あの感じ。\n人込みは苦手なはずなのに、やたらテンションがあがってしまう、あの感じ。\n人見知りのくせに、屋台のおっちゃんとはなぜか楽しく話せてしまう、あの感じ。\n50年後、100年後の祭りにも"あの感じ"が残っているといいな、という思いを込めてこの楽曲を作りました。\n好きな屋台は海鮮串焼きとシャーピンです。何卒。\n(709sec.)\n採用おめでとう！ありがとう！ということで、祭囃子に誘われ現在軽井沢を満喫中の知念です。\n「祭囃子」の歌入れのときは風邪で咳ゲッホゲホしながらも根性で歌いきったなぁ～なんてことを軽井沢の清らかな風を受けて思い出しております。(東京の空気とは全然違う…なんてこったぃ！)\n温泉入って美味しいもの食べたら帰ります。(帰りたくない゛い゛ぃぃィィ！！！)\n(Yui Chinen)',
       },
       {
-        artist: "RoughSketch &amp; Hommarju(第8回目配信楽曲）",
+        artist: "RoughSketch & Hommarju(第8回目配信楽曲）",
         title: "PARTY TIME!",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/23/result/sound/8_01.mp3",
         comment:
@@ -4857,7 +4857,7 @@ export const contests: Record<string, Contest> = {
           "作曲編曲を担当しました、MasKaleidoです。\n採用頂き、誠にありがとうございます。\n今回の「ファイブセンシズ」という楽曲は、\n新機種のイメージを、ビビッドでキャッチーなデジロックで表現しました。\nポップで、ハードでかっこよく、少しマニアックでもあったり。\n709sec.さんの歌と共に、楽しんでもらえたら嬉しいです。\n(MasKaleido)\nMasKaleido氏と初タイマンを張らせて頂きました、作詞＆歌唱担当の709sec.です。\n記念すべきボルテシリーズ第五弾ということで、タイトルも「V Sen5eS」（＝五感）となぞらえてみたり、\nVIVIDな世界観であったり、僕の口癖であったりを盛り込んだ歌詞にもお気づき頂けたらこれ幸いです。\n思いっきり楽しもうZE！\n(709sec.)",
       },
       {
-        artist: "諸星なな feat.加藤はるか&amp;YKI(第5回目配信楽曲）",
+        artist: "諸星なな feat.加藤はるか&YKI(第5回目配信楽曲）",
         title: "偶然？ 必然？ アンビバレンス！",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/23/result/sound/5_05.mp3",
         comment:
@@ -4960,7 +4960,7 @@ export const contests: Record<string, Contest> = {
           "はじめましてSOUND VOLTEX！！！！！！！！！！\nどうもPSYQUI(サイキ)です！！！！！！！！！！！！！！！\n(PSYQUI)\nお久しぶりSOUND VOLTEX！！！！！！！！！！\nどうもmikanzil(みかん汁)です！！！！！！！！！！！！！！！\n(mikanzil)",
       },
       {
-        artist: "technoplanet feat. ＯＲＩ姫 &amp; やみん(第1回目配信楽曲）",
+        artist: "technoplanet feat. ＯＲＩ姫 & やみん(第1回目配信楽曲）",
         title: "Hi-Fi!!双子'S",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/23/result/sound/1_01.mp3",
         comment:
@@ -5090,7 +5090,7 @@ export const contests: Record<string, Contest> = {
           'BlackYです！採用ありがとうございます！\n浸蝕が始まるのがどうしても待ちきれなかった僕は今回迷うことなくSHIONをリミックスさせていただきました！\nリスペクトがびっしり詰まってるんだぜっ！\nリミックスタイトルにもなってる「sublimation」は"昇華"という意味がありますが、SUBLIME TECHNO的なやつともかけてたりします。\nボーカルにはゆずりさことRisa Yuzukiさんをお呼びしました。ゆずりさの透き通るような綺麗な歌声が、今回のリミックスにすごく良い感じに華を添えてくれてます！\n(BlackY)\nゆずりさことRisa Yuzukiです！\n採用ありがとうございます。私にとっては初公募、初採用、本当にうれしいです…！\nBlackYさんから届いたデモがすごすぎて、すさまじいプレッシャー、原曲へのリスペクト、自分らしさの間で奮闘しながら歌いました…\n歌いだしだけで何十回録りなおしたか分からないくらいがんばったので！たくさん遊んでほしいです！\n(Risa Yuzuki)',
       },
       {
-        artist: "Hyuji feat. LIQU@。&amp; TadashiYamamoto(第6回目配信楽曲）",
+        artist: "Hyuji feat. LIQU@。& TadashiYamamoto(第6回目配信楽曲）",
         title: "ナスカの丘 (Hi-NRG Remix)",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/remix/10/result/sound/6_08.mp3",
         comment:
@@ -5431,7 +5431,7 @@ export const contests: Record<string, Contest> = {
           '採用ありがとうございます。Ashrountと申します。\n6年間憧れ続けた夢の舞台に参加できた事を光栄に思います！\n今回polyshaくんとタッグを組み、KACの"頂"に相応しい楽曲を作りました。\n激しく派手やかなリズムで織りなすベースと、馴染み易く煌びやかなメロディとコード進行で盛り上がる事間違いなしの楽曲に仕上がっています。\n是非『ZEИITH』を体感してみてください。宜しくお願いします！\n(Ashrount)\nこんにちは。polyshaです。\nAshrountくんが作ってくれた土台や展開を基に、メロディをいじくったりコードをいじくったりと全体を調整する役をやりました。\n「俺たちの考えた最強の音ゲーハードコア」です。よろしくお願いします！\n(polysha)',
       },
       {
-        artist: "ぽんきち&amp;ゆんゆん(第1回目配信楽曲）",
+        artist: "ぽんきち&ゆんゆん(第1回目配信楽曲）",
         title: "SAMURAI TIGER",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/26/result/sound/1_07.mp3",
         comment:
@@ -5647,7 +5647,7 @@ export const contests: Record<string, Contest> = {
           'Ashrountと申します。この度は採用ありがとうございます。\n今回コナステ版先行配信とのことで、現行コナステに収録されている楽曲の最高難易度になるような激しい楽曲に仕上げました。\nメロディアスなリードとカッコいいベースが織りなす、ハイスピードで音楽ゲーム映えするこの楽曲はさしずめ、"Arcade Core"というジャンルと言えるでしょう。\n是非"Over The Top"を体感してみてください。\n（Ashrount）',
       },
       {
-        artist: "KV.S&amp;はらたま(第1回目配信楽曲)",
+        artist: "KV.S&はらたま(第1回目配信楽曲)",
         title: "Historia of Velnoti",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/25/result/sound/1_04.mp3",
         comment:
@@ -6078,7 +6078,7 @@ export const contests: Record<string, Contest> = {
       },
       {
         artist: "CHUBAY(第1回目配信楽曲）",
-        title: "EncorE &amp; cALL",
+        title: "EncorE & cALL",
         source: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/original/28/result/sound/1_02.mp3",
         comment:
           "ボルテプレーヤーの皆さん、はじめまして。CHUBAYと申します。\n栄えあるKACの楽曲コンテストで採用いただき大変光栄に思います。\n今から6年前、まだ細かいことをよく知らずにボルテをプレーしていたとき、たまたま公式サイトを見るとFLOORとあり、どうやらそこで楽曲公募をやっているらしい、ということを知りました。\n当時はそのことに対してあまり何も思いませんでしたが、ずっとボルテをプレーしていくうちに、もしこのゲームで自分の曲が遊べたら楽しいだろうなあ、と次第に思うようになりました。\nそんな中、初めてリアルタイムで見た6th KACで、すさまじく熱い戦いが繰り広げられるのを目の当たりにしたことで、いつか自分の曲でボルテを盛り上げたいと強く思い、それを目標に作曲を始めました。\n同時に、多彩な楽曲を生み出すアーティストの方々にも憧れを抱き、音楽そのものの聞き方もより豊かになっていきました。ボルテは私の人生を大きく変えてくれたゲームです。\nだからこそ、このような機会をいただけたときの気持ちは言葉にできません。\nさて、今回採用いただいた「EncorE & cALL」という楽曲は、KACの感動を何度でも、すべてのプレーヤーに届けたいという思いで作りました。\nまるでライブステージのように熱狂的なKACの舞台で、様々な展開を見せるトップの戦いの様子を想起させるようなアツい楽曲で、私のボルテに対する思いのすべてをぶつけたものです。\n大変な状況の中、延期となったものの無事開催できることとなったKACの決勝に際し、プレーヤーの皆さんの感動に彩りを添えられれば幸いです。どうぞよしなに！\n(CHUBAY)",
