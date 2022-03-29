@@ -7,13 +7,15 @@ export type SoundInfo = {
 };
 
 export type Contest = {
+  id: string;
   name: string;
   banner: string;
   sounds: SoundInfo[];
 };
 
-export const contests: Record<string, Contest> = {
-  remix01: {
+export const contests: Contest[] = [
+  {
+    id: "remix01",
     name: "第一回スピードアップコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_01.jpg",
     sounds: [
@@ -68,7 +70,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original01: {
+  {
+    id: "original01",
     name: "BPM145-180限定! ハイテンション4つ打ちインストオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_01.jpg",
     sounds: [
@@ -144,7 +147,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original02: {
+  {
+    id: "original02",
     name: "レイシステーマ曲 -アナタ色に染めてくだサイ",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_02.jpg",
     sounds: [
@@ -164,7 +168,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix02: {
+  {
+    id: "remix02",
     name: "dj TAKA 楽曲REMIX 1ST STYLE",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_02.jpg",
     sounds: [
@@ -226,7 +231,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original05: {
+  {
+    id: "original05",
     name: "BEMANI Backstage テーマソングコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/BMBS_vtex_banner.gif",
     sounds: [
@@ -239,7 +245,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original04: {
+  {
+    id: "original04",
     name: "GUMI限定！オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_04.jpg",
     sounds: [
@@ -317,7 +324,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original06: {
+  {
+    id: "original06",
     name: "KAC2012オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_06.jpg",
     sounds: [
@@ -407,7 +415,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original07: {
+  {
+    id: "original07",
     name: "SDVX × DTM MAGAZINE コラボレーションコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_07.jpg",
     sounds: [
@@ -476,7 +485,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix03: {
+  {
+    id: "remix03",
     name: "SOUND VOLTEX II -infinite infection-制作決定記念 リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_03.jpg",
     sounds: [
@@ -615,7 +625,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original08: {
+  {
+    id: "original08",
     name: "SOUND VOLTEX II -infinite infection-制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_08.jpg",
     sounds: [
@@ -945,7 +956,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix04: {
+  {
+    id: "remix04",
     name: "東方紅魔郷リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_04.jpg",
     sounds: [
@@ -1160,7 +1172,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original10: {
+  {
+    id: "original10",
     name: "夏だ！休みだ！自由研究オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_10.jpg",
     sounds: [
@@ -1363,7 +1376,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original09: {
+  {
+    id: "original09",
     name: "ZOLA PROJECTオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_09.jpg",
     sounds: [
@@ -1404,7 +1418,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original11: {
+  {
+    id: "original11",
     name: "KAC2013オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_11.jpg",
     sounds: [
@@ -1550,7 +1565,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original12: {
+  {
+    id: "original12",
     name: "SDVX × DTM MAGAZINE コラボレーションコンテスト第2回",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_12.jpg",
     sounds: [
@@ -1619,7 +1635,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix05: {
+  {
+    id: "remix05",
     name: "東方輝針城リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_05.jpg",
     sounds: [
@@ -1738,7 +1755,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original13: {
+  {
+    id: "original13",
     name: "GUMI限定！オリジナル楽曲コンテスト第2回",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_13.jpg",
     sounds: [
@@ -1836,7 +1854,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix06: {
+  {
+    id: "remix06",
     name: "kors k楽曲リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_06.jpg",
     sounds: [
@@ -2010,7 +2029,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original14: {
+  {
+    id: "original14",
     name: "第一回ボルテキャラテーマ曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_14.jpg",
     sounds: [
@@ -2238,7 +2258,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original15: {
+  {
+    id: "original15",
     name: "SOUND VOLTEX VERSION 3 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_15.jpg",
     sounds: [
@@ -2543,7 +2564,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original16: {
+  {
+    id: "original16",
     name: "The 4th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_16.jpg",
     sounds: [
@@ -2745,7 +2767,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix07: {
+  {
+    id: "remix07",
     name: "東方妖々夢リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_07.jpg",
     sounds: [
@@ -3003,7 +3026,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original17: {
+  {
+    id: "original17",
     name: "みんなでここなつをプロデュース！ オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_17.jpg",
     sounds: [
@@ -3072,7 +3096,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original19: {
+  {
+    id: "original19",
     name: "The 5th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_19.jpg",
     sounds: [
@@ -3307,7 +3332,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix08: {
+  {
+    id: "remix08",
     name: "アルバム「STARLiGHT」発売記念 Ryu☆リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_08.jpg",
     sounds: [
@@ -3500,7 +3526,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original20: {
+  {
+    id: "original20",
     name: "SOUND VOLTEX IV 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_20.jpg",
     sounds: [
@@ -3855,7 +3882,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original21: {
+  {
+    id: "original21",
     name: "The 6th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_21.jpg",
     sounds: [
@@ -4055,7 +4083,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original22: {
+  {
+    id: "original22",
     name: "The 7th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_22.jpg",
     sounds: [
@@ -4347,7 +4376,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix09: {
+  {
+    id: "remix09",
     name: "東方永夜抄リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_09.jpg",
     sounds: [
@@ -4563,7 +4593,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original24: {
+  {
+    id: "original24",
     name: "The 8th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_24.jpg",
     sounds: [
@@ -4748,7 +4779,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original23: {
+  {
+    id: "original23",
     name: "SOUND VOLTEX VIVID WAVE 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_23.jpg",
     sounds: [
@@ -4996,7 +5028,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  remix10: {
+  {
+    id: "remix10",
     name: "BEMANI楽曲リミックスコンテスト ～2019～",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_10.png",
     sounds: [
@@ -5210,7 +5243,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original26: {
+  {
+    id: "original26",
     name: "The 9th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_26.jpg",
     sounds: [
@@ -5439,7 +5473,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original25: {
+  {
+    id: "original25",
     name: "コナステ版 SOUND VOLTEX 先行配信！オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_25.jpg",
     sounds: [
@@ -5662,7 +5697,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original27: {
+  {
+    id: "original27",
     name: "SOUND VOLTEX EXCEED GEAR制作決定記念 キャラクターテーマ楽曲コンテスト",
     banner: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_27.png",
     sounds: [
@@ -6017,7 +6053,8 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-  original28: {
+  {
+    id: "original28",
     name: "The 10th KACオリジナル楽曲コンテスト",
     banner: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_28.png",
     sounds: [
@@ -6119,4 +6156,4 @@ export const contests: Record<string, Contest> = {
       },
     ],
   },
-};
+];

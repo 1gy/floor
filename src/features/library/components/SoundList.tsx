@@ -13,10 +13,9 @@ type FlattenSound = SoundInfo & {
 
 const useFlattenSounds = (): FlattenSound[] => {
   return useMemo(() => {
-    return Object.entries(dataModule.getValue().contests)
-      .map(([key, contest]) => {
-        return contest.sounds.map<FlattenSound>((sound) => ({ ...sound, contest: key }));
-      })
+    return dataModule
+      .getValue()
+      .contests.map((contest) => contest.sounds.map<FlattenSound>((sound) => ({ ...sound, contest: contest.id })))
       .flat();
   }, [dataModule]);
 };
