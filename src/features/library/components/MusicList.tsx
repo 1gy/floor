@@ -1,24 +1,24 @@
 import { Box, List, ListItemButton, ListItemText } from "@mui/material";
 import { useCallback, useMemo, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
-import type { SoundInfo } from "../../../assets/data";
+import type { MusicInfo } from "../../../assets/data";
 import { Loadable } from "../../../libs/loadable";
-import { usePlayingSound } from "../stores";
+import { usePlayingMusic } from "../stores";
 
 const dataModule = new Loadable(import("../../../assets/data"));
 
-type FlattenSound = SoundInfo & {
+type FlattenMusic = MusicInfo & {
   contest: string;
   music_id: string;
 };
 
-const useFlattenSounds = (): FlattenSound[] => {
+const useFlattenMusics = (): FlattenMusic[] => {
   return useMemo(() => {
     return dataModule
       .getValue()
       .contests.map((contest) =>
-        contest.sounds.map<FlattenSound>((sound, index) => ({
-          ...sound,
+        contest.musics.map<FlattenMusic>((music, index) => ({
+          ...music,
           contest: contest.id,
           music_id: `${contest.id}_${index}`,
         }))
@@ -27,15 +27,15 @@ const useFlattenSounds = (): FlattenSound[] => {
   }, [dataModule]);
 };
 
-export const SoundList: VFC = () => {
-  const sounds = useFlattenSounds();
+export const MusicList: VFC = () => {
+  const musics = useFlattenMusics();
   const containerRef = useRef<HTMLUListElement>(null);
   const virtualizer = useVirtual({
-    size: sounds.length,
+    size: musics.length,
     parentRef: containerRef,
     estimateSize: useCallback(() => 70, []),
   });
-  const [sound, setSound] = usePlayingSound();
+  const [music, setMusic] = usePlayingMusic();
 
   return (
     <List ref={containerRef} sx={{ width: "100%", height: "100%", overflow: "auto" }}>
@@ -51,16 +51,16 @@ export const SoundList: VFC = () => {
               height: `${row.size}px`,
               transform: `translateY(${row.start}px)`,
             }}
-            onClick={() => setSound(sounds[row.index])}
-            selected={sounds[row.index].source === sound?.source}
+            onClick={() => setMusic(musics[row.index])}
+            selected={musics[row.index].source === music?.source}
           >
             <ListItemText
-              secondary={sounds[row.index].artist}
+              secondary={musics[row.index].artist}
               sx={{ textOverflow: "ellipsis" }}
               primaryTypographyProps={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}
               secondaryTypographyProps={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}
             >
-              {sounds[row.index].title}
+              {musics[row.index].title}
             </ListItemText>
           </ListItemButton>
         ))}

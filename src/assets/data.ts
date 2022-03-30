@@ -1,4 +1,4 @@
-export type SoundInfo = {
+export type MusicInfo = {
   artist: string;
   title: string;
   source: string;
@@ -10,7 +10,7 @@ export type Contest = {
   id: string;
   name: string;
   banner: string;
-  sounds: SoundInfo[];
+  musics: MusicInfo[];
 };
 
 export const contests: Contest[] = [
@@ -18,7 +18,7 @@ export const contests: Contest[] = [
     id: "remix01",
     name: "第一回スピードアップコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_01.jpg",
-    sounds: [
+    musics: [
       {
         artist: "かめりあ(第１回目配信楽曲）",
         title: "サヨナラ・ヘヴン（かめりあ's NEKOMATAelectroRMX）",
@@ -74,7 +74,7 @@ export const contests: Contest[] = [
     id: "original01",
     name: "BPM145-180限定! ハイテンション4つ打ちインストオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_01.jpg",
-    sounds: [
+    musics: [
       {
         artist: "P*Light(第１回目配信楽曲）",
         title: "caramel ribbon",
@@ -151,7 +151,7 @@ export const contests: Contest[] = [
     id: "original02",
     name: "レイシステーマ曲 -アナタ色に染めてくだサイ",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_02.jpg",
-    sounds: [
+    musics: [
       {
         artist: "源屋(第１回目配信楽曲）",
         title: "Ray",
@@ -172,7 +172,7 @@ export const contests: Contest[] = [
     id: "remix02",
     name: "dj TAKA 楽曲REMIX 1ST STYLE",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_02.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Dustboxxxx(第１回目配信楽曲）",
         title: "Blue Rain Dustboxxxx RMX",
@@ -235,7 +235,7 @@ export const contests: Contest[] = [
     id: "original05",
     name: "BEMANI Backstage テーマソングコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/BMBS_vtex_banner.gif",
-    sounds: [
+    musics: [
       {
         artist: "ismK(11月8日配信楽曲）",
         title: "V.I.P.",
@@ -249,7 +249,7 @@ export const contests: Contest[] = [
     id: "original04",
     name: "GUMI限定！オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_04.jpg",
-    sounds: [
+    musics: [
       {
         artist: "じろうす",
         title: "灰色の空想をつかんで",
@@ -328,7 +328,7 @@ export const contests: Contest[] = [
     id: "original06",
     name: "KAC2012オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_06.jpg",
-    sounds: [
+    musics: [
       {
         artist: "ginkiha(第１回目配信楽曲）",
         title: "EGG",
@@ -419,7 +419,7 @@ export const contests: Contest[] = [
     id: "original07",
     name: "SDVX × DTM MAGAZINE コラボレーションコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_07.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Music by 源屋, Vocal by SOPHY",
         title: "Hello world!",
@@ -489,7 +489,7 @@ export const contests: Contest[] = [
     id: "remix03",
     name: "SOUND VOLTEX II -infinite infection-制作決定記念 リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_03.jpg",
-    sounds: [
+    musics: [
       {
         artist: "BlackY(第8回目配信楽曲）",
         title: "DEADLOCK XXX",
@@ -629,7 +629,7 @@ export const contests: Contest[] = [
     id: "original08",
     name: "SOUND VOLTEX II -infinite infection-制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_08.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Lite Show Magic (t+pazolite vs C-Show)(第9回目配信楽曲）",
         title: "Crack Traxxxx",
@@ -960,7 +960,7 @@ export const contests: Contest[] = [
     id: "remix04",
     name: "東方紅魔郷リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_04.jpg",
-    sounds: [
+    musics: [
       {
         artist: "すのうまん(第7回目配信楽曲）",
         title: "おお われら喜び讃うべし、主よ",
@@ -1176,7 +1176,7 @@ export const contests: Contest[] = [
     id: "original10",
     name: "夏だ！休みだ！自由研究オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_10.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Diceros Bicornis(第7回目配信楽曲）",
         title: "Innocent Tempest",
@@ -1380,7 +1380,7 @@ export const contests: Contest[] = [
     id: "original09",
     name: "ZOLA PROJECTオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_09.jpg",
-    sounds: [
+    musics: [
       {
         artist: "かめりあ",
         title: "FLYING OUT TO THE SKY",
@@ -1422,7 +1422,7 @@ export const contests: Contest[] = [
     id: "original11",
     name: "KAC2013オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_11.jpg",
-    sounds: [
+    musics: [
       {
         artist: "黒魔(第4回目配信楽曲）",
         title: "Black Emperor",
@@ -1569,7 +1569,7 @@ export const contests: Contest[] = [
     id: "original12",
     name: "SDVX × DTM MAGAZINE コラボレーションコンテスト第2回",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_12.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Music by BlackY, Vocal by ぁゅ(第3回目配信楽曲）",
         title: "SPARKLING FANTASY",
@@ -1639,7 +1639,7 @@ export const contests: Contest[] = [
     id: "remix05",
     name: "東方輝針城リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_05.jpg",
-    sounds: [
+    musics: [
       {
         artist: "unatra(第3回目配信楽曲）",
         title: "Attack on Dwarf",
@@ -1759,7 +1759,7 @@ export const contests: Contest[] = [
     id: "original13",
     name: "GUMI限定！オリジナル楽曲コンテスト第2回",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_13.jpg",
-    sounds: [
+    musics: [
       {
         artist: "C-YA(第2回目配信楽曲）",
         title: "shiny rainbow flower",
@@ -1858,7 +1858,7 @@ export const contests: Contest[] = [
     id: "remix06",
     name: "kors k楽曲リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_06.jpg",
-    sounds: [
+    musics: [
       {
         artist: "かめりあ(第7回目配信楽曲）",
         title: 'gigadelic (かめりあ\'s "The TERA" RMX)',
@@ -2033,7 +2033,7 @@ export const contests: Contest[] = [
     id: "original14",
     name: "第一回ボルテキャラテーマ曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_14.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Yooh(第9回目配信楽曲）",
         title: "Seraphim",
@@ -2262,7 +2262,7 @@ export const contests: Contest[] = [
     id: "original15",
     name: "SOUND VOLTEX VERSION 3 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_15.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Hirayasu Matsudo(第15回目配信楽曲）",
         title: "Pet Peeve",
@@ -2568,7 +2568,7 @@ export const contests: Contest[] = [
     id: "original16",
     name: "The 4th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_16.jpg",
-    sounds: [
+    musics: [
       {
         artist: "たちのん(第8回目配信楽曲）",
         title: "Aliquam",
@@ -2771,7 +2771,7 @@ export const contests: Contest[] = [
     id: "remix07",
     name: "東方妖々夢リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_07.jpg",
-    sounds: [
+    musics: [
       {
         artist: "ふりらい feat. あにょ(第8回目配信楽曲）",
         title: "アルティメットトゥルース -Phantasm-",
@@ -3030,7 +3030,7 @@ export const contests: Contest[] = [
     id: "original17",
     name: "みんなでここなつをプロデュース！ オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_17.jpg",
-    sounds: [
+    musics: [
       {
         artist: "シンゴ（マッカチン企画）＆アラ(第2回目配信楽曲）",
         title: "モラトリアムノオト",
@@ -3100,7 +3100,7 @@ export const contests: Contest[] = [
     id: "original19",
     name: "The 5th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_19.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Riz(第8回目配信楽曲）",
         title: "REGALIA",
@@ -3336,7 +3336,7 @@ export const contests: Contest[] = [
     id: "remix08",
     name: "アルバム「STARLiGHT」発売記念 Ryu☆リミックスコンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_08.jpg",
-    sounds: [
+    musics: [
       {
         artist: "borzy(第10回目配信楽曲）",
         title: "Time to Air (jazz it up style)",
@@ -3530,7 +3530,7 @@ export const contests: Contest[] = [
     id: "original20",
     name: "SOUND VOLTEX IV 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_20.jpg",
-    sounds: [
+    musics: [
       {
         artist: "かめりあ feat. 歌劇派学生(第13回目配信楽曲）",
         title: "Lowermost revolt",
@@ -3886,7 +3886,7 @@ export const contests: Contest[] = [
     id: "original21",
     name: "The 6th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_21.jpg",
-    sounds: [
+    musics: [
       {
         artist: "はるなば(第5回目配信楽曲）",
         title: "Chaotic Romance",
@@ -4087,7 +4087,7 @@ export const contests: Contest[] = [
     id: "original22",
     name: "The 7th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_22.jpg",
-    sounds: [
+    musics: [
       {
         artist: "winddrums vs cosMo(第9回目配信楽曲）",
         title: "Divine's or Deal",
@@ -4380,7 +4380,7 @@ export const contests: Contest[] = [
     id: "remix09",
     name: "東方永夜抄リミックス楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_09.jpg",
-    sounds: [
+    musics: [
       {
         artist: "brz1128(第7回目配信楽曲）",
         title: "Invisible Bullets",
@@ -4597,7 +4597,7 @@ export const contests: Contest[] = [
     id: "original24",
     name: "The 8th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_24.jpg",
-    sounds: [
+    musics: [
       {
         artist: "technoplanet feat. Kuroto Sion(第5回目配信楽曲)",
         title: "Turn the story",
@@ -4783,7 +4783,7 @@ export const contests: Contest[] = [
     id: "original23",
     name: "SOUND VOLTEX VIVID WAVE 制作決定記念 オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_23.jpg",
-    sounds: [
+    musics: [
       {
         artist: "BlackY(第9回目配信楽曲）",
         title: "Vividly Impromptu",
@@ -5032,7 +5032,7 @@ export const contests: Contest[] = [
     id: "remix10",
     name: "BEMANI楽曲リミックスコンテスト ～2019～",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/remix_10.png",
-    sounds: [
+    musics: [
       {
         artist: "ismK(第8回目配信楽曲）",
         title: "ABSOLUTE(ismK passionate remix)",
@@ -5247,7 +5247,7 @@ export const contests: Contest[] = [
     id: "original26",
     name: "The 9th KACオリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_26.jpg",
-    sounds: [
+    musics: [
       {
         artist: "Croire(第5回目配信楽曲）",
         title: "Non RolicK!!大冒険",
@@ -5477,7 +5477,7 @@ export const contests: Contest[] = [
     id: "original25",
     name: "コナステ版 SOUND VOLTEX 先行配信！オリジナル楽曲コンテスト",
     banner: "https://p.eagate.573.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_25.jpg",
-    sounds: [
+    musics: [
       {
         artist: "かめりあ(第6回目配信楽曲)",
         title: "PSYCHO+HEROES",
@@ -5701,7 +5701,7 @@ export const contests: Contest[] = [
     id: "original27",
     name: "SOUND VOLTEX EXCEED GEAR制作決定記念 キャラクターテーマ楽曲コンテスト",
     banner: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_27.png",
-    sounds: [
+    musics: [
       {
         artist: "DecisionS (kanone + nora2r)(第13回目配信楽曲）",
         title: "Unleashed Redness",
@@ -6057,7 +6057,7 @@ export const contests: Contest[] = [
     id: "original28",
     name: "The 10th KACオリジナル楽曲コンテスト",
     banner: "https://eacache.s.konaminet.jp/game/sdvx/sv/p/floor/image/floor_top/floor_banner/original_28.png",
-    sounds: [
+    musics: [
       {
         artist: "MisoilePunch♪(第2回目配信楽曲）",
         title: "MixxioN",

@@ -4,8 +4,8 @@ import { contests } from "../../../assets/data";
 import { LoadingSuspense } from "../../../components/elements/LoadingSuspense";
 import { Page } from "../../../components/elements/Page";
 import { useSet } from "../../../hooks/set";
-import { SoundList } from "./SoundList";
-import { SoundPlayer } from "./SoundPlayer";
+import { MusicList } from "./MusicList";
+import { MusicPlayer } from "./MusicPlayer";
 
 type ContestBannerProps = {
   value: string;
@@ -70,11 +70,11 @@ export const LibraryPage: VFC = () => {
           >
             <Box sx={{ flexGrow: 1, overflow: "hidden" }}>
               <LoadingSuspense>
-                <SoundList />
+                <MusicList />
               </LoadingSuspense>
             </Box>
             <Box>
-              <SoundPlayer />
+              <MusicPlayer />
             </Box>
           </Box>
           {/*filter*/}

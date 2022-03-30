@@ -1,13 +1,13 @@
 import { Box, IconButton, ListItem, ListItemText, Slider, Stack, Toolbar } from "@mui/material";
 import { useCallback, useState, VFC } from "react";
 import { CloseIcon, PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
-import { usePlayingSound } from "../stores";
-import { useAudio } from "./SoundPlayer.logic";
+import { usePlayingMusic } from "../stores";
+import { useAudio } from "./MusicPlayer.logic";
 
-export const SoundPlayer: VFC = () => {
-  const [sound, setSound] = usePlayingSound();
+export const MusicPlayer: VFC = () => {
+  const [music, setMusic] = usePlayingMusic();
   const [volume, setVolume] = useState(0.5);
-  const { playing, play, pause } = useAudio(sound?.source, volume);
+  const { playing, play, pause } = useAudio(music?.source, volume);
 
   const handleVolumeChange = useCallback((event: Event, newValue: number | number[]) => {
     if (typeof newValue === "number") {
@@ -16,10 +16,10 @@ export const SoundPlayer: VFC = () => {
   }, []);
 
   const handleClose = useCallback(() => {
-    setSound(null);
+    setMusic(null);
   }, []);
 
-  if (!sound) {
+  if (!music) {
     return <></>;
   }
 
@@ -34,7 +34,7 @@ export const SoundPlayer: VFC = () => {
           </IconButton>
         }
       >
-        <ListItemText secondary={sound.artist}>{sound.title}</ListItemText>
+        <ListItemText secondary={music.artist}>{music.title}</ListItemText>
       </ListItem>
       <Toolbar disableGutters sx={{ ml: 1, mr: 1 }} variant="dense">
         <IconButton onClick={() => (playing ? pause() : play())}>
