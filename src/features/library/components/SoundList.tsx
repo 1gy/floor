@@ -9,13 +9,20 @@ const dataModule = new Loadable(import("../../../assets/data"));
 
 type FlattenSound = SoundInfo & {
   contest: string;
+  music_id: string;
 };
 
 const useFlattenSounds = (): FlattenSound[] => {
   return useMemo(() => {
     return dataModule
       .getValue()
-      .contests.map((contest) => contest.sounds.map<FlattenSound>((sound) => ({ ...sound, contest: contest.id })))
+      .contests.map((contest) =>
+        contest.sounds.map<FlattenSound>((sound, index) => ({
+          ...sound,
+          contest: contest.id,
+          music_id: `${contest.id}_${index}`,
+        }))
+      )
       .flat();
   }, [dataModule]);
 };
