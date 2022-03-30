@@ -24,9 +24,12 @@ export const LibraryCard: VFC = () => {
 };
 
 export const QuizCard: VFC = () => {
+  const navigate = useNavigate();
+  const handleClick = useCallback(() => navigate({ to: "/quiz" }), []);
+
   return (
     <Card sx={{ width: 300 }}>
-      <CardActionArea>
+      <CardActionArea onClick={handleClick}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Quiz

@@ -6,6 +6,8 @@ const { MainRoutes } = lazyImport(() => import("../features/main"), "MainRoutes"
 
 const { LibraryRoutes } = lazyImport(() => import("../features/library"), "LibraryRoutes");
 
+const { QuizRoutes } = lazyImport(() => import("../features/quiz"), "QuizRoutes");
+
 const routes: Route[] = [
   {
     path: "/",
@@ -17,7 +19,7 @@ const routes: Route[] = [
   },
   {
     path: "/quiz",
-    element: <div>quiz</div>,
+    element: <QuizRoutes />,
   },
   {
     path: "*",
