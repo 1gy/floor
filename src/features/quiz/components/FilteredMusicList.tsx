@@ -2,17 +2,21 @@ import { Box, List, ListItemButton, ListItemText } from "@mui/material";
 import { useCallback, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
 import { useFlattenMusics } from "../../../hooks/musics";
-import { usePlayingMusic } from "../stores";
+import { useFilteredMusicList } from "./FlilteredMusicList.logic";
 
-export const MusicList: VFC = () => {
-  const { musics } = useFlattenMusics();
+export type FilteredMusicListProps = {
+  filterText: string;
+  handleClick: (musicId: string) => void;
+};
+
+export const FilteredMusicList: VFC<FilteredMusicListProps> = ({ filterText, handleClick }) => {
+  const { filteredMusics: musics } = useFilteredMusicList(filterText);
   const containerRef = useRef<HTMLUListElement>(null);
   const virtualizer = useVirtual({
     size: musics.length,
     parentRef: containerRef,
     estimateSize: useCallback(() => 70, []),
   });
-  const [music, setMusic] = usePlayingMusic();
 
   return (
     <List ref={containerRef} sx={{ width: "100%", height: "100%", overflow: "auto" }}>
@@ -28,8 +32,7 @@ export const MusicList: VFC = () => {
               height: `${row.size}px`,
               transform: `translateY(${row.start}px)`,
             }}
-            onClick={() => setMusic(musics[row.index])}
-            selected={musics[row.index].source === music?.source}
+            onClick={() => handleClick(musics[row.index].musicId)}
           >
             <ListItemText
               secondary={musics[row.index].artist}

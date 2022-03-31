@@ -7,7 +7,7 @@ import { useAudio } from "./MusicPlayer.logic";
 export const MusicPlayer: VFC = () => {
   const [music, setMusic] = usePlayingMusic();
   const [volume, setVolume] = useState(0.5);
-  const { playing, play, pause } = useAudio(music?.source, volume);
+  const { playing, play, pause } = useAudio(music?.source, volume, true);
 
   const handleVolumeChange = useCallback((event: Event, newValue: number | number[]) => {
     if (typeof newValue === "number") {

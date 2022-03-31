@@ -5,7 +5,7 @@ const useUpdate = () => {
   return useCallback(() => update((prev) => !prev), []);
 };
 
-export const useAudio = (url: string | undefined, volume: number) => {
+export const useAudio = (url: string | undefined, volume: number, autoStart: boolean) => {
   const audio = useMemo(() => {
     return new Audio(url);
   }, [url]);
@@ -15,9 +15,11 @@ export const useAudio = (url: string | undefined, volume: number) => {
     audio.volume = volume;
     audio.addEventListener("play", update);
     audio.addEventListener("pause", update);
-    audio.play().catch((e) => {
-      // see: Autoplay policy
-    });
+    if (autoStart) {
+      audio.play().catch((e) => {
+        // see: Autoplay policy
+      });
+    }
 
     return () => {
       audio.pause();
