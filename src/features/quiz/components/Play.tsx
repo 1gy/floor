@@ -36,7 +36,7 @@ const MusicPlayer: VFC = () => {
 
   return (
     <Toolbar disableGutters sx={{ ml: 1, mr: 1 }} variant="dense">
-      <IconButton onClick={() => (playing ? pause() : play())}>
+      <IconButton sx={{ mr: 1 }} onClick={() => (playing ? pause() : play())}>
         {playing ? <PauseIcon /> : <PlayArrowIcon />}
       </IconButton>
       <Stack width="100%" spacing={2} direction="row" alignItems="center">
@@ -97,19 +97,24 @@ type PlayingProps = {
   submitAnswer: (musicId: string) => void;
 };
 const Playing: VFC<PlayingProps> = ({ filterText, handleFilterChange, currentStage, lastStage, submitAnswer }) => {
+  const back = useBack();
   return (
     <Box height="100%" bgcolor="white" display="flex" flexDirection="column">
-      <Box>
+      <Box bgcolor="grey.100" p={1} display="flex" alignItems="center">
         <Typography variant="body1">
-          {currentStage + 1} / {lastStage}
+          Q {currentStage + 1} / {lastStage}
         </Typography>
+        <Box flexGrow="1" />
+        <Button variant="outlined" onClick={back}>
+          トップに戻る
+        </Button>
       </Box>
       <Box>
         <Box bgcolor="grey.100" p={1}>
           <MusicPlayer />
         </Box>
       </Box>
-      <Box p={2}>
+      <Box p={1}>
         <OutlinedInput fullWidth placeholder="フィルター" value={filterText} onChange={handleFilterChange} />
       </Box>
       <Box flexGrow="1" overflow="hidden">
@@ -126,7 +131,7 @@ export const Play: VFC = () => {
   return (
     <Page sx={{ bgcolor: "grey.100" }}>
       <Box display="flex" height="100%" justifyContent="center" alignItems="center">
-        <Box width={`${theme.breakpoints.values.sm}px`} height="100%">
+        <Box width={`${theme.breakpoints.values.sm}px`} height="100%" boxShadow="0px 0px 8px 0px gray">
           {currentStage !== lastStage ? (
             <Playing
               filterText={filterText}

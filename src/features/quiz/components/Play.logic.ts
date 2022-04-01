@@ -63,14 +63,16 @@ export const usePlayLogic = () => {
     };
   }, [currentStage]);
 
-  useEffect(() => {
-    // debug
-    console.log(answers.map((musicId) => musicTable[musicId].title));
-    console.log(quizInfo.musicIds.map((musicId) => musicTable[musicId].title));
-    return () => {
-      /** */
-    };
-  }, [JSON.stringify(quizInfo.musicIds), currentStage, JSON.stringify(answers)]);
+  if (import.meta.env.DEV) {
+    useEffect(() => {
+      // debug
+      console.log(answers.map((musicId) => musicTable[musicId].title));
+      console.log(quizInfo.musicIds.map((musicId) => musicTable[musicId].title));
+      return () => {
+        /** */
+      };
+    }, [JSON.stringify(quizInfo.musicIds), currentStage, JSON.stringify(answers)]);
+  }
 
   return {
     filterText,
