@@ -1,12 +1,13 @@
 import { Box, IconButton, ListItem, ListItemText, Slider, Stack, Toolbar } from "@mui/material";
-import { useCallback, useState, VFC } from "react";
+import { useCallback, VFC } from "react";
 import { CloseIcon, PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
+import { useVolume } from "../../../hooks/settings";
 import { usePlayingMusic } from "../stores";
 import { useAudio } from "./MusicPlayer.logic";
 
 export const MusicPlayer: VFC = () => {
   const [music, setMusic] = usePlayingMusic();
-  const [volume, setVolume] = useState(0.5);
+  const [volume, setVolume] = useVolume();
   const { playing, play, pause } = useAudio(music?.source, volume, true);
 
   const handleVolumeChange = useCallback((event: Event, newValue: number | number[]) => {

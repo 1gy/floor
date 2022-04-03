@@ -13,10 +13,11 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import { ChangeEvent, useCallback, useState, VFC } from "react";
+import { ChangeEvent, useCallback, VFC } from "react";
 import { PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
 import { Page } from "../../../components/elements/Page";
 import { FlattenMusic } from "../../../hooks/musics";
+import { useVolume } from "../../../hooks/settings";
 import { useAudio } from "../../library/components/MusicPlayer.logic";
 import { usePlayingMusic } from "../../library/stores";
 import { FilteredMusicList } from "./FilteredMusicList";
@@ -25,7 +26,7 @@ import { QuizInfo } from "./quiz";
 
 const MusicPlayer: VFC = () => {
   const [music, _] = usePlayingMusic();
-  const [volume, setVolume] = useState(0.5);
+  const [volume, setVolume] = useVolume();
   const { playing, play, pause } = useAudio(music?.source, volume, true);
 
   const handleVolumeChange = useCallback((_: Event, newValue: number | number[]) => {
