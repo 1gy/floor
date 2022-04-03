@@ -1,16 +1,17 @@
 import { Box, List, ListItemButton, ListItemText } from "@mui/material";
 import { useCallback, useRef, VFC } from "react";
 import { useVirtual } from "react-virtual";
-import { useFlattenMusics } from "../../../hooks/musics";
 import { useFilteredMusicList } from "./FlilteredMusicList.logic";
+import { QuizInfo } from "./quiz";
 
 export type FilteredMusicListProps = {
   filterText: string;
   handleClick: (musicId: string) => void;
+  quizInfo: QuizInfo;
 };
 
-export const FilteredMusicList: VFC<FilteredMusicListProps> = ({ filterText, handleClick }) => {
-  const { filteredMusics: musics } = useFilteredMusicList(filterText);
+export const FilteredMusicList: VFC<FilteredMusicListProps> = ({ filterText, handleClick, quizInfo }) => {
+  const { filteredMusics: musics } = useFilteredMusicList(filterText, quizInfo);
   const containerRef = useRef<HTMLUListElement>(null);
   const virtualizer = useVirtual({
     size: musics.length,

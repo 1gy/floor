@@ -2,11 +2,16 @@ import { Outlet, Route, Router, useLocation, useResolvePath, useRouter } from "@
 import { VFC } from "react";
 import { Play } from "./components/Play";
 import { QuizPage } from "./components/QuizPage";
+import { SelectContestsPage } from "./components/SelectContestsPage";
 
 const routes: Route[] = [
   {
     path: "/",
     element: <QuizPage />,
+  },
+  {
+    path: "/contests",
+    element: <SelectContestsPage />,
   },
   {
     path: "/play/:info",

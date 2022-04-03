@@ -1,6 +1,13 @@
-export type QuizInfo = {
-  musicIds: string[];
-};
+export type QuizInfo =
+  | {
+      type?: undefined;
+      musicIds: string[];
+    }
+  | {
+      type: "contests";
+      contestIds: string[];
+      musicIds: string[];
+    };
 
 export const encodeQuizInfo = (quizInfo: QuizInfo): string => {
   return btoa(JSON.stringify(quizInfo));

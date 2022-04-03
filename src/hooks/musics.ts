@@ -9,6 +9,11 @@ export type FlattenMusic = MusicInfo & {
   musicId: string;
 };
 
+export const useContests = () => {
+  const contests = dataModule.getValue().contests;
+  return { contests };
+};
+
 export const useFlattenMusics = () => {
   const contests = dataModule.getValue().contests;
   return useMemo(() => {

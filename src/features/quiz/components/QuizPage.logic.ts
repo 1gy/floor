@@ -28,3 +28,13 @@ export const useRandomQuiz = () => {
     play,
   };
 };
+
+export const useSelectContests = () => {
+  const navigate = useNavigate();
+  const go = useCallback(() => {
+    navigate({ to: "/contests" });
+  }, [navigate]);
+  return {
+    go,
+  };
+};

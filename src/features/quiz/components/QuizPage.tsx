@@ -1,7 +1,7 @@
 import { Card, CardActionArea, CardContent, Grid, Typography } from "@mui/material";
 import { VFC } from "react";
 import { Page } from "../../../components/elements/Page";
-import { useRandomQuiz } from "./QuizPage.logic";
+import { useRandomQuiz, useSelectContests } from "./QuizPage.logic";
 
 export const RandomPlayCard: VFC = () => {
   const { play } = useRandomQuiz();
@@ -15,6 +15,25 @@ export const RandomPlayCard: VFC = () => {
           </Typography>
           <Typography variant="body2" color="text.secondary">
             ランダムに10曲をプレイします
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+};
+
+export const SelectContestCard: VFC = () => {
+  const { go } = useSelectContests();
+
+  return (
+    <Card sx={{ width: 300 }}>
+      <CardActionArea onClick={go}>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            コンテスト選曲
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            コンテストを指定してランダムに10曲をプレイします
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -41,6 +60,9 @@ export const QuizPage: VFC = () => {
         </Grid>
         <Grid item m={2}>
           <RandomPlayCard />
+        </Grid>
+        <Grid item m={2}>
+          <SelectContestCard />
         </Grid>
       </Grid>
     </Page>

@@ -13,6 +13,7 @@ export const useSet = <T>() => {
     []
   );
   return {
+    set,
     add,
     remove,
     has,

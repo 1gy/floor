@@ -95,8 +95,16 @@ type PlayingProps = {
   currentStage: number;
   lastStage: number;
   submitAnswer: (musicId: string) => void;
+  quizInfo: QuizInfo;
 };
-const Playing: VFC<PlayingProps> = ({ filterText, handleFilterChange, currentStage, lastStage, submitAnswer }) => {
+const Playing: VFC<PlayingProps> = ({
+  filterText,
+  handleFilterChange,
+  currentStage,
+  lastStage,
+  submitAnswer,
+  quizInfo,
+}) => {
   const back = useBack();
   return (
     <Box height="100%" bgcolor="white" display="flex" flexDirection="column">
@@ -118,7 +126,7 @@ const Playing: VFC<PlayingProps> = ({ filterText, handleFilterChange, currentSta
         <OutlinedInput fullWidth placeholder="フィルター" value={filterText} onChange={handleFilterChange} />
       </Box>
       <Box flexGrow="1" overflow="hidden">
-        <FilteredMusicList filterText={filterText} handleClick={submitAnswer} />
+        <FilteredMusicList filterText={filterText} handleClick={submitAnswer} quizInfo={quizInfo} />
       </Box>
     </Box>
   );
@@ -139,6 +147,7 @@ export const Play: VFC = () => {
               currentStage={currentStage}
               lastStage={lastStage}
               submitAnswer={submitAnswer}
+              quizInfo={quizInfo}
             />
           ) : (
             <Result answers={answers} quizInfo={quizInfo} musicTable={musicTable} />
