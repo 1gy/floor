@@ -18,7 +18,7 @@ import { PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../..
 import { Page } from "../../../components/elements/Page";
 import { FlattenMusic } from "../../../hooks/musics";
 import { useVolume } from "../../../hooks/settings";
-import { useAudio } from "../../library/components/MusicPlayer.logic";
+import { useAudio } from "../../../hooks/audio";
 import { usePlayingMusic } from "../../library/stores";
 import { FilteredMusicList } from "./FilteredMusicList";
 import { useBack, usePlayLogic, useTweetResult } from "./Play.logic";
@@ -27,7 +27,7 @@ import { QuizInfo } from "./quiz";
 const MusicPlayer: VFC = () => {
   const [music, _] = usePlayingMusic();
   const [volume, setVolume] = useVolume();
-  const { playing, play, pause } = useAudio(music?.source, volume, true);
+  const { playing, play, pause, canUseVolume } = useAudio(music?.source, volume, true);
 
   const handleVolumeChange = useCallback((_: Event, newValue: number | number[]) => {
     if (typeof newValue === "number") {
@@ -42,7 +42,7 @@ const MusicPlayer: VFC = () => {
       </IconButton>
       <Stack width="100%" spacing={2} direction="row" alignItems="center">
         <VolumeDownIcon />
-        <Slider min={0} max={1} step={0.01} value={volume} onChange={handleVolumeChange} />
+        <Slider min={0} max={1} step={0.01} value={volume} onChange={handleVolumeChange} disabled={!canUseVolume} />
         <VolumeUpIcon />
       </Stack>
     </Toolbar>

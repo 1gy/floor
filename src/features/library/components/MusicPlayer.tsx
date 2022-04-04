@@ -3,7 +3,7 @@ import { useCallback, VFC } from "react";
 import { CloseIcon, PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
 import { useVolume } from "../../../hooks/settings";
 import { usePlayingMusic } from "../stores";
-import { useAudio } from "./MusicPlayer.logic";
+import { useAudio } from "../../../hooks/audio";
 
 export const MusicPlayer: VFC = () => {
   const [music, setMusic] = usePlayingMusic();

@@ -5,13 +5,23 @@ const useUpdate = () => {
   return useCallback(() => update((prev) => !prev), []);
 };
 
+const checkCanUseVolume = () => {
+  const userAgent = window.navigator.userAgent.toLocaleLowerCase();
+  if (userAgent.includes("iphone") || userAgent.includes("ipad")) {
+    return false;
+  }
+  return true;
+};
+
 export const useAudio = (url: string | undefined, volume: number, autoStart: boolean) => {
   const audio = useMemo(() => {
     return new Audio(url);
   }, [url]);
+  const canUseVolume = useMemo(() => checkCanUseVolume(), []);
   const update = useUpdate();
 
   useEffect(() => {
+    audio.volume = 0;
     audio.volume = volume;
     audio.addEventListener("play", update);
     audio.addEventListener("pause", update);
@@ -44,5 +54,6 @@ export const useAudio = (url: string | undefined, volume: number, autoStart: boo
     playing: !audio.paused,
     play,
     pause,
+    canUseVolume,
   };
 };
