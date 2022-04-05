@@ -1,8 +1,33 @@
 import { useMatch, useNavigate } from "@tanstack/react-location";
 import { ChangeEvent, useCallback, useEffect, useMemo, useState } from "react";
+import { useAudio } from "../../../hooks/audio";
 import { useFlattenMusics } from "../../../hooks/musics";
+import { useVolume } from "../../../hooks/settings";
 import { usePlayingMusic } from "../../library/stores";
 import { decodeQuizInfo, QuizInfo } from "./quiz";
+
+export const useMusicPlayerLogic = () => {
+  const [music, _] = usePlayingMusic();
+  const [volume, setVolume] = useVolume();
+  const { playing, play, pause, canUseVolume } = useAudio(music?.source, volume, true);
+
+  const handleVolumeChange = useCallback((_: Event, newValue: number | number[]) => {
+    if (typeof newValue === "number") {
+      setVolume(newValue);
+    }
+  }, []);
+
+  return {
+    music,
+    playing,
+    play,
+    pause,
+    canUseVolume,
+    volume,
+    handleVolumeChange,
+    canUseVolume,
+  };
+};
 
 export const useTweetResult = (answers: string[], quizInfo: QuizInfo) => {
   return useCallback(() => {

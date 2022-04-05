@@ -13,27 +13,20 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import { ChangeEvent, useCallback, VFC } from "react";
+import { ChangeEvent, VFC } from "react";
 import { PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../../components/elements/Icons";
 import { Page } from "../../../components/elements/Page";
 import { FlattenMusic } from "../../../hooks/musics";
-import { useVolume } from "../../../hooks/settings";
-import { useAudio } from "../../../hooks/audio";
-import { usePlayingMusic } from "../../library/stores";
 import { FilteredMusicList } from "./FilteredMusicList";
-import { useBack, usePlayLogic, useTweetResult } from "./Play.logic";
+import { useBack, useMusicPlayerLogic, usePlayLogic, useTweetResult } from "./Play.logic";
 import { QuizInfo } from "./quiz";
 
 const MusicPlayer: VFC = () => {
-  const [music, _] = usePlayingMusic();
-  const [volume, setVolume] = useVolume();
-  const { playing, play, pause, canUseVolume } = useAudio(music?.source, volume, true);
+  const { music, play, playing, pause, canUseVolume, volume, handleVolumeChange } = useMusicPlayerLogic();
 
-  const handleVolumeChange = useCallback((_: Event, newValue: number | number[]) => {
-    if (typeof newValue === "number") {
-      setVolume(newValue);
-    }
-  }, []);
+  if (music == null) {
+    return <></>;
+  }
 
   return (
     <Toolbar disableGutters sx={{ ml: 1, mr: 1 }} variant="dense">
@@ -67,6 +60,9 @@ const Result: VFC<ResultProps> = ({ answers, quizInfo, musicTable }) => {
         <Button variant="outlined" sx={{ m: 1 }} onClick={tweetResult}>
           結果をtweetする
         </Button>
+      </Box>
+      <Box>
+        <MusicPlayer />
       </Box>
       <Box flexGrow="1" bgcolor="white" overflow="auto">
         <List>
