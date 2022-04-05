@@ -3,7 +3,6 @@ import {
   Button,
   IconButton,
   List,
-  ListItem,
   ListItemButton,
   ListItemText,
   OutlinedInput,
@@ -18,7 +17,7 @@ import { PauseIcon, PlayArrowIcon, VolumeDownIcon, VolumeUpIcon } from "../../..
 import { Page } from "../../../components/elements/Page";
 import { FlattenMusic } from "../../../hooks/musics";
 import { FilteredMusicList } from "./FilteredMusicList";
-import { useBack, useMusicPlayerLogic, usePlayLogic, useTweetResult } from "./Play.logic";
+import { useBack, useMusicPlayerLogic, usePlay, usePlayLogic, useTweetResult } from "./Play.logic";
 import { QuizInfo } from "./quiz";
 
 const MusicPlayer: VFC = () => {
@@ -50,6 +49,7 @@ type ResultProps = {
 const Result: VFC<ResultProps> = ({ answers, quizInfo, musicTable }) => {
   const back = useBack();
   const tweetResult = useTweetResult(answers, quizInfo);
+  const play = usePlay();
 
   return (
     <Box height="100%" display="flex" flexDirection="column">
@@ -68,15 +68,15 @@ const Result: VFC<ResultProps> = ({ answers, quizInfo, musicTable }) => {
         <List>
           {answers.map((answer, index) => (
             <>
-              <ListItemButton>
+              <ListItemButton onClick={() => play(answer)}>
                 <Typography>{index + 1}.</Typography>
                 <Typography m={1}>{answer === quizInfo.musicIds[index] ? "⭕" : "❌"}</Typography>
                 <ListItemText>{musicTable[answer].title}</ListItemText>
               </ListItemButton>
               {answer !== quizInfo.musicIds[index] && (
-                <ListItem>
+                <ListItemButton onClick={() => play(quizInfo.musicIds[index])}>
                   <ListItemText>正解：{musicTable[quizInfo.musicIds[index]].title}</ListItemText>
-                </ListItem>
+                </ListItemButton>
               )}
             </>
           ))}

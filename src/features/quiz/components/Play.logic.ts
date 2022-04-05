@@ -25,7 +25,6 @@ export const useMusicPlayerLogic = () => {
     canUseVolume,
     volume,
     handleVolumeChange,
-    canUseVolume,
   };
 };
 
@@ -49,6 +48,12 @@ export const useBack = () => {
   return useCallback(() => {
     navigate({ to: "/" });
   }, []);
+};
+
+export const usePlay = () => {
+  const [_, setMusic] = usePlayingMusic();
+  const { musicTable } = useFlattenMusics();
+  return useCallback((musicId: string) => setMusic(musicTable[musicId]), []);
 };
 
 export const usePlayLogic = () => {
